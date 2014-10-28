@@ -1,0 +1,190 @@
+@font-face {
+	font-family: 'lobster';
+	src: url('Lobster_1.3.otf');
+	font-weight: lighter;
+}
+
+*
+{
+	margin: 0;
+	padding: 0;
+}
+/*
+Partie header
+*/
+
+header
+{
+	border-bottom: 2px solid black;
+	background: #164f86; /* Old browsers */
+	background: -moz-linear-gradient(top,  #164f86 0%, #0d3569 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#164f86), color-stop(100%,#0d3569)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #164f86 0%,#0d3569 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #164f86 0%,#0d3569 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #164f86 0%,#0d3569 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #164f86 0%,#0d3569 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#164f86', endColorstr='#0d3569',GradientType=0 ); /* IE6-9 */
+	height: 75px;
+}
+
+#nav
+{
+	display: inline-block;
+	width: 100%;
+	margin-top: 0px;
+	text-align: right;
+}
+
+#nav ul
+{
+	list-style-type: none;
+}
+
+#nav li
+{
+	display: inline-block;
+	height: 75px;
+	font-size: 15px;
+	color: white;
+	font-family: lobster, sans-serif;
+	position: relative;
+	float:right;
+}
+
+li.logo
+{
+	display: inline-block;
+	text-align: left;
+	height: 75px;
+	width: 240px;
+	position: absolute;
+}
+
+.header-link
+{
+	display: block;
+	height: 100%;
+	line-height: 75px;
+	padding: 0 5px;
+	color: white;
+	font-style: normal;
+	text-decoration: none;
+}
+
+.header-link:hover
+{
+	background-color: rgb(13,53,105);
+	color: rgb(180,180,180);
+}
+
+div#content
+{
+	display: block;
+	width: 100%;
+	height: 575px;
+	background-color: rgb(200,200,200);
+}
+
+/*
+Fin de partie header
+*/
+
+/*
+Partie recherche
+*/
+.search-block
+{
+	width: 100%;
+	height: 87px;
+	background: #4073b5; /* Old browsers */
+	background: -moz-linear-gradient(top,  #4073b5 0%, #192d46 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#4073b5), color-stop(100%,#192d46)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #4073b5 0%,#192d46 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #4073b5 0%,#192d46 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #4073b5 0%,#192d46 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #4073b5 0%,#192d46 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4073b5', endColorstr='#192d46',GradientType=0 ); /* IE6-9 */
+	position: relative;
+}
+
+form
+{
+	font-family: Arial, sans-serif;
+	color: white;
+	display: block;
+	line-height: 80px;
+	margin-left: 50px;
+}
+
+#advanced_search
+{
+	width: 200px;
+	height: 40px;
+	border: 1px solid black;
+	position: relative;
+	display: block;
+	float: right;
+	line-height: 20px;
+	background-color: white;
+	margin-top: 18px;
+	margin-right: 450px;
+	border-radius: 5px;
+}
+
+#asearch
+{
+	text-align: center;
+	line-height: 10px;
+	font-family: Arial, sans-serif;
+	font-style: none;
+	color: black;
+}
+
+footer
+{
+	background-color: rgb(49,89,139);
+	width: 100%;
+}
+
+footer p 
+{
+	font-family: Arial, sans-serif;
+	color: white;
+}
+
+.footer_link /* Rejoignez-nous :*/
+{
+	font-family: Arial, sans-serif;
+	text-align: center;
+	color: white;
+	padding-top: 20px;
+}
+
+#footer-logo /* bloc logos */
+{
+	margin-bottom: 30px;
+}
+.flogo /* logo facebook */
+{
+	display: inline-block;
+	position: relative;
+	margin-top: 20px;
+}
+
+.tlogo /* logo twitter */
+{
+	display: inline-block;
+	position: relative;
+	margin-top: 20px;
+}
+
+.footerxlink /* Nous contacter ... forum */ 
+{
+	padding-bottom: 50px;
+}
+
+.footer-link /* Nous contacter ... Forum */ 
+{
+	color: white;
+	text-decoration: none;
+}
