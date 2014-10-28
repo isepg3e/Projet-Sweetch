@@ -9,9 +9,7 @@
 	margin: 0;
 	padding: 0;
 }
-/*
-Partie header
-*/
+					/*Partie header*/
 
 header
 {
@@ -49,6 +47,8 @@ header
 	font-family: lobster, sans-serif;
 	position: relative;
 	float:right;
+	width:10em;
+	text-align:center;
 }
 
 li.logo
@@ -73,8 +73,9 @@ li.logo
 
 .header-link:hover
 {
-	background-color: rgb(13,53,105);
-	color: rgb(180,180,180);
+	background-color: rgb(33,111,224);
+	color: white;
+	border-radius: 70px;
 }
 
 div#content
@@ -85,13 +86,9 @@ div#content
 	background-color: rgb(200,200,200);
 }
 
-/*
-Fin de partie header
-*/
+					/*Fin de partie header*/
 
-/*
-Partie recherche
-*/
+					/*Partie recherche*/
 .search-block
 {
 	width: 100%;
