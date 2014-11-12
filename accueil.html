@@ -11,66 +11,89 @@
 
 			<header>
 
-				<div id="nav-logo">
-					<ul>
-						<li class="logo">
-							<a href=""><img src="logo.png" height="65" width="255"/></a>
-						</li>
-					</ul>
-				</div>
+				<a id="nav-logo" href="accueil.html">
+					<img src="logo.png" height="65" width="255"/>
+				</a>
 
 				<div id="nav">
 					<ul>
+						<li><a class="header-link" href="">Inscription</a></li>
+						<li><a class="header-link" href="">Connexion</a></li>
+						<li><a class="header-link" href="">Aide</a></li>
 						<li><a class="header-link" href="">Publier une annonce</a>
 						</li>
-						<li><a class="header-link" href="">Aide</a></li>
-						<li><a class="header-link" href="">Connexion</a></li>
-						<li><a class="header-link" href="">Inscription</a></li>
 					</ul>
 				</div>
-		
+				
 			</header>
 
-			<div id="content">
-				
-			</div>
-			
-			<div class="search-block">
-				<form method="post" action="traitement.php">
-					<div id="searchbar">
-						<label for="recherche_simple">Recherche: </label>
-						<input type="search" name="recherche_simple" id="recherche_simple" placeholder="Ex: soleil, campagne,..." size="50" maxlength="60" />
-						<input type="submit" value="Rechercher"/>
-						<div id="advanced_search">
-							<a href="#" id="asearch">Recherche avancée</a>
-						</div>
-					</div>
-				</form>
-			</div>
-			
+
+			<section id="slider-principal">
+
+			</section>
+
+
+			<section id="recherche">
+
+				<div id="recherche-simple">
+					<label for="search">Recherche :</label><input type="text" name="search" class="search" placeholder="Recherche par mot-clé"/>
+					<input type="submit" value="Rechercher" class="submit"/>
+				</div>
+
+				<a href="#" id="recherche-avancee">
+					Recherche avancée
+				</a>
+
+				<a href="#infos" id="informations">
+					Cliquez ici pour plus d'informations
+				</a>
+
+			</section>
+
+
+			<section id="infos">
+				<p>Text here</p><p>Text here</p><p>Text here</p><p>Text here</p><p>Text here</p><p>Text here</p><p>Text here</p><p>Text here</p><p>Text here</p><p>Text here</p><p>Text here</p><p>Text here</p><p>Text here</p><p>Text here</p><p>Text here</p><p>Text here</p><p>Text here</p><p>Text here</p><p>Text here</p><p>Text here</p><p>Text here</p>
+
+			</section>
+
 			<footer>
+				<p class="footer_link">
+					Rejoignez-nous sur:
+				</p>
 
-				<center>
-					<p class="footer_link">Rejoignez-nous sur:</p>
+				<div id="footer-logo">
+					<a href="" id="fb">
+						<img src="logofb.png" height="40" width="40"/>
+					</a>
+					<a href="" id="twitter">
+						<img src="twitterlogo.png" height="40" width="40"/>
+					</a>
+					<div id="clear">
+					</div>
+				</div>
 
-						<div id="footer-logo">
-							<ul>
-								<li class="flogo">
-									<a href=""><img src="logofb.png" height="40" width="40"/></a>
-								</li>
-								<li class="tlogo">
-									<a href=""><img src="twitterlogo.png" height="40" width="40"/></a>
-								</li>
-							</ul>
-						</div>
+				<p class="footerxlink">
 
-					<p class="footerxlink">
+					<a class="footer-link" href="">
+						Nous contacter
+					</a>
+					 | 
+					<a class="footer-link" href="">
+						Aide 
+					</a>
+					 | 
+					<a class="footer-link" href="">
+						FAQ 
+					</a>
+					 | 
+					 <a class="footer-link" href="">
+					 	Forum
+					 </a>
 
-						<a class="footer-link" href="">Nous contacter</a> | <a class="footer-link" href="">Aide </a> | <a class="footer-link" href="">FAQ </a> | <a class="footer-link" href="">Forum</a>
-
-					</p>
-				</center>
+				</p>
 			</footer>
-			
+
+
+
 	</body>
 </html>
