@@ -9,186 +9,244 @@
 	margin: 0;
 	padding: 0;
 }
-					/*Partie header*/
+
+/*
+Partie header
+*/
 
 header
 {
-	border-bottom: 2px solid black;
-	background: #164f86; /* Old browsers */
-	background: -moz-linear-gradient(top,  #164f86 0%, #0d3569 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#164f86), color-stop(100%,#0d3569)); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top,  #164f86 0%,#0d3569 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top,  #164f86 0%,#0d3569 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(top,  #164f86 0%,#0d3569 100%); /* IE10+ */
-	background: linear-gradient(to bottom,  #164f86 0%,#0d3569 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#164f86', endColorstr='#0d3569',GradientType=0 ); /* IE6-9 */
+	position: static;
 	height: 75px;
+	width: 100%;
+	border-bottom: 1px solid rgb(12,59,102);
+	position: relative;
+	background-color: rgb(27,120,209);
+}
+
+#nav-logo
+{
+	position: absolute;
+	top: 5px;
+	left: 15px;
+	float: left;
 }
 
 #nav
 {
-	display: inline-block;
-	width: 100%;
-	margin-top: 0px;
-	text-align: right;
-}
-
-#nav ul
-{
-	list-style-type: none;
-}
-
-#nav li
-{
-	display: inline-block;
 	height: 75px;
-	font-size: 15px;
-	color: white;
-	font-family: lobster, sans-serif;
-	position: relative;
-	float:right;
-	width:10em;
-	text-align:center;
-}
-
-li.logo
-{
-	display: inline-block;
-	text-align: left;
-	height: 75px;
-	width: 240px;
 	position: absolute;
+	width: auto;
+	right: 0px;
+}
+
+#nav li 
+{
+	display: inline-block;
+	list-style-type: none;
+	line-height: 75px;
 }
 
 .header-link
 {
 	display: block;
 	height: 100%;
-	line-height: 75px;
 	padding: 0 5px;
-	color: white;
-	font-style: normal;
 	text-decoration: none;
+	font-size: 17px;
+	font-family: lobster, Arial, sans-serif;
+	color: white;
 }
 
 .header-link:hover
 {
-	background-color: rgb(33,111,224);
-	color: white;
-	border-radius: 70px;
-}
-#content-1
-{
-	display: block;
-	width: 100%;
-	height: 30px;
-	background-color: white;
+	background-color: rgb(19,88,162);
+	color: rgb(180,180,180);
 }
 
-.content
+/*
+Fin de la partie header
+*/
+
+/*
+Partie Slider
+*/
+
+#slider-principal
 {
-	display: block;
-	width: 100%;
+	position: static;
 	height: 575px;
-	background-color: rgb(200,200,200);
-}
-
-					/*Fin de partie header*/
-
-					/*Partie recherche*/
-.search-block
-{
 	width: 100%;
+	background-color: rgba(0,0,200,0.4);
+	display: block;
+}
+
+/*
+Fin de la partie Slider
+*/
+
+/*
+Partie barre de recherche
+*/
+
+#recherche
+{
+	position: static;
 	height: 87px;
-	background: #4073b5; /* Old browsers */
-	background: -moz-linear-gradient(top,  #4073b5 0%, #192d46 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#4073b5), color-stop(100%,#192d46)); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top,  #4073b5 0%,#192d46 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top,  #4073b5 0%,#192d46 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(top,  #4073b5 0%,#192d46 100%); /* IE10+ */
-	background: linear-gradient(to bottom,  #4073b5 0%,#192d46 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4073b5', endColorstr='#192d46',GradientType=0 ); /* IE6-9 */
-	position: relative;
+	width: 100%;
+	background-color: rgb(27,120,209);
 }
 
-form
+#recherche-simple
 {
-	font-family: Arial, sans-serif;
-	color: white;
-	display: block;
+	position: relative;
 	line-height: 80px;
-	margin-left: 50px;
+	height: 100%;
+	padding: 0 33px;
+	float: left;
+	border-right: 1px solid rgb(12,59,102);
 }
 
-#advanced_search
+label
 {
-	width: 200px;
-	height: 40px;
-	border: 1px solid black;
-	position: relative;
-	display: block;
-	float: right;
-	line-height: 20px;
+	float: left;
+	line-height: 87px;
+	height: 100%;
+	width: 120px;
+	font-size: 20px;
+	font-family: "Century Gothic", Arial, sans-serif;
+	color: white;
+}
+
+.search
+{
+	margin-top: 20px;
+	margin-left: 10px;
+	margin-right: 0px;
+	height: 45px;
+	font-size: 19px;
+	font-family: "Century Gothic", Arial, sans-serif;
+	width: 327px;
+}
+
+.submit
+{
+	height: 50px;
+	margin-top: 20px;
+	font-size: 19px;
+	font-family: "Century Gothic", Arial, sans-serif;
+	color: ;
+	border: 1px solid #EFEFEF;
 	background-color: white;
-	margin-top: 18px;
-	margin-right: 450px;
-	border-radius: 5px;
+	padding: 0 5px;
+	margin-left: 0px;
 }
 
-#asearch
+#recherche-avancee, #informations
 {
-	text-align: center;
-	line-height: 10px;
-	font-family: Arial, sans-serif;
-	font-style: none;
-	color: black;
+	display: block;
+	height: 100%;
+	width: auto;
+	float: left;
+	line-height: 90px;
+	padding: 0 20px;
+	color: white;
+	font-family: "Century Gothic", Arial, sans-serif;
+	font-size: 20px;
+	text-decoration: none;
+	border-right: 1px solid rgb(12,59,102);
 }
+
+#informations
+{
+	padding: 0 24px;
+	border-right: none;
+}
+
+/*
+Fin de la partie barre de recherche
+*/
+
+/* 
+Partie informations
+*/
+
+#infos 
+{
+	height: 750px;
+	width: 100%;
+	background-color: rgba(200,200,0,0.6);
+}
+
+/*
+Fin de la partie informations
+*/
+
+/* 
+Partie footer
+*/
 
 footer
 {
-	background-color: rgb(49,89,139);
+	height: 200px;
 	width: 100%;
+	background-color: rgb(21,72,145);
+	position: relative;
 }
 
-footer p 
+.footer_link
 {
-	font-family: Arial, sans-serif;
 	color: white;
+	font-family: Arial, sans-serif;
+	font-size: 20px;
+	text-align: center;
+	padding: 30px 0;
 }
 
-.footer_link /* Rejoignez-nous :*/
+#fb
 {
-	font-family: Arial, sans-serif;
+	float:left;
+	width: 50px;
+}
+
+#twitter
+{
+	float: right;
+	width: 50px;
+}
+
+#clear
+{
+	clear: left;
+}
+
+#footer-logo
+{
+	width: 100px;
+	margin: 0 auto;
+}
+
+.footerxlink
+{
+	padding-top: 30px;
 	text-align: center;
 	color: white;
-	padding-top: 20px;
 }
 
-#footer-logo /* bloc logos */
+.footer-link
 {
-	margin-bottom: 30px;
-}
-.flogo /* logo facebook */
-{
-	display: inline-block;
-	position: relative;
-	margin-top: 20px;
-}
-
-.tlogo /* logo twitter */
-{
-	display: inline-block;
-	position: relative;
-	margin-top: 20px;
-}
-
-.footerxlink /* Nous contacter ... forum */ 
-{
-	padding-bottom: 50px;
-}
-
-.footer-link /* Nous contacter ... Forum */ 
-{
+	font-family: Arial, sans-serif;
+	font-size: 12px;
 	color: white;
 	text-decoration: none;
 }
+
+
+
+
+
+
+
+
+
+
