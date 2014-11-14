@@ -1,0 +1,23 @@
+aside
+{
+float: right;
+width: 300px;
+border: 1px solid black;
+
+position: absolute;
+right: 150px;
+top:70px;
+z-index: 2
+}
+label
+{
+display: block;
+width: 300px;
+float: left;
+}
+label1
+{
+display: block;
+width: 75px;
+float: left;
+}
