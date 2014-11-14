@@ -56,12 +56,15 @@ header
 	font-size: 17px;
 	font-family: lobster, Arial, sans-serif;
 	color: white;
+	width:8em;
+	text-align:center;
 }
 
 .header-link:hover
 {
-	background-color: rgb(19,88,162);
+	background-color: rgb(27,155,230);
 	color: rgb(180,180,180);
+	border-radius: 40px;
 }
 
 /*
@@ -72,14 +75,101 @@ Fin de la partie header
 Partie Slider
 */
 
-#slider-principal
-{
-	position: static;
-	height: 575px;
-	width: 100%;
-	background-color: rgba(0,0,200,0.4);
-	display: block;
-}
+#slideshow 
+{  
+    position: relative;  
+    width: 640px;  
+    height: 310px;  
+    padding: 15px;  
+    margin: 2em auto 2em;  
+    border: 1px solid #ddd;  
+    background: #FFF;  
+    /* CSS3 effects */  
+    background: linear-gradient(#FFF, #FFF 20%, #EEE 80%, #DDD);  
+    border-radius: 5px 5px 5px 5px;  
+    box-shadow: 0 0 1em rgba(0,0,0, 0.2);  
+}  
+   
+/* avanced box-shadow */  
+#slideshow:before,  #slideshow:after 
+{  
+    position: absolute;  
+    bottom:16px;  
+    z-index: -10;  
+    width: 50%;  
+    height: 20px;  
+    content: " ";  
+    background: rgba(0,0,0,0.1);  
+    border-radius: 50%;  
+    box-shadow: 0 0 3px rgba(0,0,0, 0.4), 0 20px 10px rgba(0,0,0, 0.7);  
+}  
+#slideshow:before 
+{  
+    left:0;  
+    transform: rotate(-5deg);  
+}  
+#slideshow:after 
+{  
+    right:0;  
+    transform: rotate(5deg);  
+} 
+
+/* gestion des dimensions et débordement du conteneur */  
+#slideshow .container 
+{  
+    position:relative;  
+    width: 640px;  
+    height: 310px;  
+    overflow: hidden;  
+}  
+      
+/* on prévoit un petit espace gris pour la timeline */  
+#slideshow .container:after 
+{  
+    position:absolute;  
+    bottom: 0; left:0;  
+    content: " ";  
+    width: 100%;  
+    height: 1px;  
+    background: #999;  
+}  
+/*  
+   le conteneur des slides 
+   en largeur il fait 100% x le nombre de slides 
+*/  
+#slideshow .slider 
+{  
+    position: absolute;  
+    left:0; top:0;  
+    width: 400%;  
+    height: 310px;  
+}  
+  
+/* annulation des marges sur figure */  
+#slideshow figure 
+{  
+    position:relative;  
+    display:inline-block;  
+    padding:0; margin:0;  
+}  
+/* petit effet de vignette sur les images */  
+#slideshow figure:after 
+{  
+    position: absolute;  
+    display:block;  
+    content: " ";  
+    top:0; left:0;  
+    width: 100%; height: 100%;  
+    box-shadow: 0 0 65px rgba(0,0,0, 0.5) inset;  
+} 
+
+
+
+
+
+
+
+
 
 /*
 Fin de la partie Slider
