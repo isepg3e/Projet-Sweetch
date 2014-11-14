@@ -1,0 +1,58 @@
+@font-face {
+font-family: 'lobster';
+src: url('Lobster_1.3.otf');
+font-weight: lighter;
+}
+*
+{
+margin: 0;
+padding: 0;
+}
+
+section
+{
+height:500px;
+}
+
+p1
+{
+   
+    
+    text-align: center;
+    padding: 12px; /* Marge intérieure de 12px */
+
+background-color: rgb(33,111,224);
+color:white;
+border-radius:30px;
+
+}
+p2
+{
+text-align: center;
+    padding: 12px; /* Marge intérieure de 12px */
+
+background-color: rgb(33,111,224);
+color:white;
+border-radius:30px;
+}
+p3
+{
+text-align: center;
+    padding: 12px; /* Marge intérieure de 12px */
+
+background-color: rgb(33,111,224);
+color:white;
+border-radius:30px;
+}
+
+
+input
+{
+background-color:white;
+}
+
+
+
+
+
+
