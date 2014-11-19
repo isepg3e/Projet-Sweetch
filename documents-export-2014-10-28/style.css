@@ -56,15 +56,12 @@ header
 	font-size: 17px;
 	font-family: lobster, Arial, sans-serif;
 	color: white;
-	width:8em;
-	text-align:center;
 }
 
 .header-link:hover
 {
-	background-color: rgb(27,155,230);
+	background-color: rgb(19,88,162);
 	color: rgb(180,180,180);
-	border-radius: 40px;
 }
 
 /*
@@ -75,6 +72,7 @@ Fin de la partie header
 Partie Slider
 */
 
+<<<<<<< HEAD
 #head_slider
 {
 	background: white;
@@ -118,6 +116,16 @@ Partie Slider
 
 
 
+=======
+#slider-principal
+{
+	position: static;
+	height: 575px;
+	width: 100%;
+	background-color: rgba(34,59,121,1);
+	display: block;
+}
+>>>>>>> 4a22f9d1541c2119e720cbb3d99fe683af83ab35
 
 /*
 Fin de la partie Slider
@@ -213,7 +221,52 @@ Partie informations
 {
 	height: 750px;
 	width: 100%;
-	background-color: rgba(200,200,0,0.6);
+	background-color: rgb(79,199,218);
+	position: relative;
+}
+
+.mark1
+{
+	position: absolute;
+	height: 60%;
+	width: 100%;
+	border-bottom: 1px solid rgb(106,106,106);
+}
+
+.mark2
+{
+	position: absolute;
+	bottom: 0;
+	height: 40%;
+	width: 33%;
+	border-right: 1px solid rgb(106,106,106);
+}
+
+.mark2:hover, .mark3:hover, .mark4:hover
+{
+	background-color: rgb(70,255,142);
+	border: 1px solid rgb(106,106,106);
+}
+
+.mark3
+{
+	position: absolute;
+	bottom: 0;
+	height: 40%;
+	width: 34%;
+	border-right: 1px solid rgb(106,106,106);
+	left: 33%;
+
+}
+
+.mark4
+{
+	position: absolute;
+	bottom: 0;
+	height: 40%;
+	width: 33%;
+	float: left;
+	right: 0;
 }
 
 /*
